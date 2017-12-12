@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
+<!--CSS und Scrips einbinden-->
+<link rel="stylesheet" type="text/css" href="./css/hamburger.css">
+
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+</head>
+<!--Meta Angaben-->
+<meta name="language" content="Suchbegriffe">
+<meta charset="utf-8"/>
+<meta name="keywords" content="Suchbegriffe">
+<meta name="description" content="Beschreibung">
+<meta title="Seitentitel">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no height=device-height">
+<!--Diese Zeile brauchen wir umbedingt damit unser responsive Design später funktioniert. Später mehr dazu. -->
+  </head>
+<body>
+  <!-- Start des Kopfbereiches-->
+    <header>
+      <!-- Kopfbereich für Navigation, Bannerbild etc. -->
+      <div class="mobile-menu-bar">
+        <button class="hamburger--spin hamburger" id="hamburger" type="button">
+         <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+         </span>
+        </button>
+      </div>
+<nav>
+    <ul id="mobile-menu" class="active">
+      <li><a class="scroll" href="index.html#about">Home</a></li>
+      <li><a class="scroll" href="index.html#skills">Skills</a></li>
+      <li><a class="scroll" href="index.html#cv">Lebenslauf</a></li>
+      <li><a class="scroll" href="index.html#portfolio">Portfolio</a></li>
+      <li><a class="scroll" href="index.html#formular">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+  <div id="einmaliges-Element"></div>
+  <div class="mehrfaches-Element"></div>
+    <main>
+      <!-- Umschliessender Hauptbereich für alle actions und asides -->
+    </main>
+    <!-- Section About -->
+<section id="about">
+    <div id="portrait">
+        <div id="portrait_image"></div>
+      </div>
+    <div id="beschreibung">
+      <div id="name">
+        <br>
+        <br>
+        <h1>Nadja Frentzel</h1>
+          <h4>Interactive Media Designer i.A.</h4>
+      </div>
+      <div id="adresse">
+      <strong>Geburtstag :</strong> 22.06.1999<br>
+      <strong>Mobil :</strong> 078 964 34 77<br>
+      <strong>Email :</strong> <a href="mailto:nadjafrentzel@hotmail.ch">nadjafrentzel@hotmail.ch</a><br>
+      <strong>Adresse :</strong> Chuchigrabenstrasse 6, 4522 Rüttenen<br>
+      <br>
+      <br>
+      <a href="https://www.instagram.com/na.fr/"><img src="./img/social/instagram.svg" height="40px"></a>
+      <a href="https://www.facebook.com/raptusag/"><img src="./img/social/facebook.svg" height="40px"></a>
+      <a href="https://bexio-shop.ch/"><img src="./img/social/website.svg" height="40px"></a>
+      </div>
+    </div>
+  </section>
+
+    <!-- schliessendes section Tag der About Sektion -->
+  <div id="wrapper"> <!-- mit dem wrapper können wir nun eine maximale Breite definieren -->
+    <section id="skills"> <!-- Sektion Skills -->
+      <h1>Meine Fähigkeiten</h1>
+        <div class="skills-icons">
+          <div id="erstes-icon">
+            Adobe Photoshop
+          </div>
+          <div id="zweites-icon">
+          Adobe Illustrator
+          </div>
+          <div id="drittes-icon">
+            Sketchapp
+          </div>
+        </div>
+      </section>
+<br>
+<br>
+<section id="cv">
+  <section id="jobs">
+    <h1>Schule</h1>
+    <div class="cv-eintrag">
+      <div class="links">
+        <img src="./img/cv/schule.svg" height="30px"/>
+        <p class="jahr">2016-2017</p>
+        </div>
+        <div class="rechts">
+          <p class="cv-beschreibung">
+          <span class="cv-titel">Gestalterischer Vorkurs</span>
+          <br>
+           Neue Schule für Gestaltung Langenthal
+         </p>
+      </div>
+    </div>
+    <div class="cv-eintrag">
+      <div class="links">
+        <img src="./img/cv/schule.svg" height="30px"/>
+        <p class="jahr">2012-2016</p>
+      </div>
+      <div class="rechts">
+        <p class="cv-beschreibung">
+          <span class="cv-titel">Oberstufe</span>
+          <br>
+          Kantonsschule Solothurn
+          <br>
+          2 Jahre Sek P, 2 Jahre Gymnasium
+        </p>
+      </div>
+    </div>
+  <div class="cv-eintrag">
+    <div class="links">
+      <img src="./img/cv/schule.svg" height="30px"/>
+      <p class="jahr">2006-2012</p>
+    </div>
+    <div class="rechts">
+      <p class="cv-beschreibung">
+        <span class="cv-titel">Primarschule</span>
+        <br>
+        Primarschule Rüttenen
+        <br>
+        1. - 6. Klasse
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section id="ausbildungen">
+      <h1>Ausbildung</h1>
+      <div class="cv-eintrag">
+        <div class="links">
+          <img src="./img/cv/ausbildung.svg" height="50px"/>
+          <p class="jahr">2017-(2021)</p>
+          </div>
+          <div class="rechts">
+            <p class="cv-beschreibung">
+            <span class="cv-titel">Berufslehre Interactive Media Designer EFZ</span>
+            <br>
+             Raptus AG
+             <br>
+             Gartenweg 1
+             <br>
+             3250 Lyss
+           </p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="portfolio">
+    <h1>Portfolio</h1>
+    <div class="portfolio-kacheln">
+
+      <div class="portfolio-eintrag">
+        <a href="arbeit1.html"><img src="./img/portfolio/bild1.jpg" title="Arbeit 1">
+          <div class="arbeit-titel">
+            <p>erste Arbeit</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-eintrag">
+        <a href="arbeit2.html"><img src="./img/portfolio/bild1.jpg" title="Arbeit 2">
+          <div class="arbeit-titel">
+            <p>zweite Arbeit</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-eintrag">
+        <a href="arbeit3.html"><img src="./img/portfolio/bild1.jpg" title="Arbeit 3">
+          <div class="arbeit-titel">
+            <p>dritte Arbeit</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    </section>
+<br>
+<br>
+<section id="formular">
+<h1>Kontakt</h1>
+
+<div class="kontaktformular">
+
+  <form action="https://formspree.io/nadjafrentzel@hotmail.ch" class="form-horizontal" role="form" method="post">
+    <input type="text" class="form-control" name="name" placeholder="Name" required>
+    <input type="email" class="form-control" name="_replyto" placeholder="Email" required>
+        <input type="text" class="form-control" name="_subject" placeholder="Betreff" required>
+        <textarea class="form-control" rows="5" name="message" placeholder="Mitteilung" required></textarea>
+        <button class="absenden" value="Submit Comment" type="submit">Absenden</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+<footer>
+  © Nadja Frentzel 2017 &nbsp;|&nbsp; <a href="mailto:nadjafrentzel@hotmail.ch">nadjafrentzel@hotmail.ch</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(".scroll").click(function(event){
+             event.preventDefault();
+             //calculate destination place
+             var dest=0;
+             if($(this.hash).offset().top > $(document).height()-$(window).height()){
+                  dest=$(document).height()-$(window).height();
+             }else{
+                  dest=$(this.hash).offset().top;
+             }
+             //go to destination
+             $('html,body').animate({scrollTop:dest}, 700,'swing');
+         });
+
+         $(function(){
+        $(document).on('click', '#hamburger', function (event) {
+        $('#mobile-menu').toggleClass('active');
+        $('#hamburger').toggleClass('is-active');
+        $('nav').toggleClass('active');
+        // $('html').toggleClass('noscroll');
+        });
+      });
+    </script>
+
+</body>

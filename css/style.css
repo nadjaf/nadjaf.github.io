@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+nav ul{
+  text-align: center;/*bewirkt eine mittige textausrichtung */
+  margin: 0; /*entfernt standartisierte Aussenabstände*/
+  padding: 0;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  background-color: #3E4854;
+  }
+  nav li {
+    display: inline;/*sorgt dafür, dass alle Li-Elemente nebeneinander dargestellt werden */
+    }
+    nav a {
+      display: inline-block;
+      /* inline-block macht jedes der a-Elemente in der Navigation zu einem Block-Element,
+      sodass sich Aussenabstände und Höhe definieren lassen. display: b lock würde jeden
+      Navigationspunkt die volle Breite des Elternelements nutzen lassen,
+      somit wären die Links wieder unterinander, aber mittig. */
+      color: #ffffff; /*Textfarbe innerhalb nav a, kann als HTML Farbcode #123456 oder
+      als eines der Keywords angegeben werden.
+      z.B. red, blue, yellow - Liste siehe Links weiter unten.*/
+      font-family:sans-serif;
+      font-size: 20px; /*Schriftgrösse */
+      padding: 22px 15px; /*Innenabstand */
+      text-decoration: none; /*entfernt den Browser-Standard dass Links unterstrichen sind */
+      font-weight: 300;
+      font-family: nexa light, sans-serif;
+    }
+#about {
+    display: flex;
+}
+
+#hamburger {
+  display: none;
+}
+
+:focus {
+  outline: flex;
+}
+
+#portrait {
+  width: 60%;
+  position: relative;
+}
+#portrait_image{
+  background-size: cover; /*sorgt dafür dass das Bild immer das Elternelement komplett ausfüllt*/
+  background-image: url(../img/nadja-bearbeitet.jpg); /*gibt die Quelle unseres Bildes an */
+  background-position: center;/*bestimmt wie das Bild beim verkleinern positioniert werden soll */
+  position:absolute;
+  height: 100%;
+  width: 100%;
+}
+#beschreibung {
+  margin-top: 0;
+  width: 100%;
+  color: #3E4854;
+  background: #8499B2;
+  /* das background Element ist vielseitig einsetzbar. Hier definieren wir eine
+  hellgraue Hintergrundfarbe. Hier sind auch Begriffe wie "grey" und "blue" möglich,
+  allerdings haben wir mit dem RGB Farbcode eine deutlich bessere Kontrolle über den effektiven Farbton */
+/*margin-top: 63px;*/
+}
+
+#name {
+  min-height: 50px;
+  margin: 5%;
+  font-family: Nexa Light, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+}
+#adresse {
+  min-height: 50px;
+  padding:5%;
+}
+body { /*globale Schrifteinstellungen definieren */
+  font-size: 14px;
+font-family: Montserrat Regular, sans-serif;
+background-color: #3E4854;
+
+}
+a {
+  color: #DEDCD7;
+  text-decoration: none;
+}
+main {
+  width: 100%;
+}
+#wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5%;
+  font-weight: lighter;
+}
+#wrapper h1 {
+  text-align: center;
+  line-height: 2.5em;
+  font-family: Nexa LIGHT, sans-serif;
+  color: white;
+  font-size: 30px;
+}
+.skills-icons{
+  display: flex;
+  flex-flow: row wrap;
+}
+#erstes-icon, #zweites-icon, #drittes-icon {
+  height: 120px;
+  width: 33.3333%;
+  text-align: center;
+  color: #8499B2;
+  font-size: 20px;
+}
+#erstes-icon {
+  background: url("../img/skills/photoshop.svg")50% 50% no-repeat;
+}
+#zweites-icon {
+  background: url("../img/skills/illustrator.svg")50% 50% no-repeat;
+}
+#drittes-icon {
+  background: url("../img/skills/sketch.svg")50% 50% no-repeat;
+}
+
+#cv, #jobs, #ausbildungen{
+  float: center;
+}
+.cv-eintrag {
+  width: 100%;
+  float: left;
+  color: #8499B2;
+
+}
+.cv-eintrag img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.links p {
+  display: inline-block;
+  padding: 15px;
+  border: 0px solid #8499B2;
+}
+.links {
+  float: left;
+}
+.rechts {
+  width: 80%;
+  vertical-align: top;
+  float: right;
+}
+.cv-titel {
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: lighter;
+  color: #8499B2;
+}
+.cv-beschreibung {
+  border: 0px solid #8499B2;
+  padding: 0 15px 15px 15px;
+  color: white;
+  font-weight: lighter;
+}
+
+.portfolio-kacheln{
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio-eintrag {
+  position: relative;
+  width: 33.3333%;
+}
+.portfolio-eintrag img{
+  width: 100%;
+  display: block;
+}
+.portfolio-eintrag .arbeit-titel {
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  color: white;
+  padding: 45% 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+.portfolio-eintrag:hover .arbeit-titel {
+  visibility:visible;
+}
+
+#formular{
+  clear: both;
+}
+.kontaktformular {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-control, textarea {
+  padding: 2%;
+  width: 92%;
+  margin: 2%;
+}
+
+.absenden {
+  padding: 2%;
+  width: 96%;
+  margin: 2%;
+  background: #03cc85;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.absenden:hover {
+  background: #029f68;
+}
+footer {
+  background: #343434;
+  color: white;
+  padding: 2% 0;
+  margin: 2% 0 0 0 0;
+  text-align: center;
+}
+
+img.img-links {
+  width: 48%;
+  float: left;
+  margin: 0 4% 4% 0;
+}
+img.img-rechts {
+  width: 48%;
+  margin: 0 0 4% 0;
+}
+.back {
+  width: 100%;
+  text-align: center;
+  height: 4em;
+}
+nav a:hover {
+  color: #03cc85;
+  cursor: pointer;
+}
+@media only screen and (max-width: 860px){
+
+	#about {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	#beschreibung {
+		width: 100%;
+		margin-top: 0px;
+	}
+	#portrait {
+		width: 100%;
+		padding-bottom: 56.25%;
+	}
+	#erstes-icon, #zweites-icon, #drittes-icon {
+		width: 100%;
+	}
+	section#cv {
+		padding: 0 5%;
+	}
+	.links {
+		width: 100%;
+		text-align: center;
+	}
+	.rechts {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 480px){
+	nav li {
+		display: block;
+		line-height: 0.1em;
+	}
+	ul {
+		padding: 0;
+    margin: 0;
+    transition: 1s;
+    transform: translate(0%, -285px);
+    transform: translate(0%, 0%);
+	}
+
+  nav {
+    display: none!important;
+  }
+
+  nav.active {
+    display: block!important;
+  }
+
+  nav ul {
+    left: 0;
+    top: 0;
+  }
+
+  .mobile-menu-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-color: #3e4854;
+    z-index: 300;
+  }
+
+  .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+		background-color: #ffffff;
+	}
+
+	#hamburger {
+		display: inline;
+		float: right;
+	}
+
+	main {
+		padding: 0;
+	}
+	.portfolio-eintrag {
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+
+
+}
