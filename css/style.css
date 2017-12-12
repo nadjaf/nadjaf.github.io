@@ -10,7 +10,7 @@ nav ul{
   z-index: 3;
   width: 100%;
   top: 0;
-  background-color: #3E4854;
+  background-color: rgba(62, 72, 84, 1);
   }
   nav li {
     display: inline;/*sorgt dafür, dass alle Li-Elemente nebeneinander dargestellt werden */
@@ -77,6 +77,7 @@ nav ul{
   min-height: 50px;
   padding:5%;
 }
+
 body { /*globale Schrifteinstellungen definieren */
   font-size: 14px;
 font-family: Montserrat Regular, sans-serif;
@@ -275,42 +276,41 @@ nav a:hover {
 	}
 }
 @media only screen and (max-width: 480px){
+  #wrapper {
+    width: 100%;
+  }
+
+  body {
+		margin: 0;
+	}
+
 	nav li {
 		display: block;
 		line-height: 0.1em;
 	}
+
 	ul {
-		padding: 0;
-    margin: 0;
-    transition: 1s;
-    transform: translate(0%, -285px);
     transform: translate(0%, 0%);
+    margin: 0;
+    padding: 0;
+    transform: translate(0%, 0);
+    transition: 1s;
 	}
 
-  nav {
-    display: none!important;
-  }
+	ul.active {
+		transform: translate(0%, -285px);
+	}
 
-  nav.active {
-    display: block!important;
-  }
-
-  nav ul {
-    left: 0;
-    top: 0;
-  }
-
-  .mobile-menu-bar {
-    position: fixed;
+	.mobile-menu-bar {
+		position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
-    background-color: #3e4854;
-    z-index: 300;
-  }
+    z-index: 200;
+	}
 
-  .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
-		background-color: #ffffff;
+	.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+		background-color: #FFF;
 	}
 
 	#hamburger {
@@ -318,9 +318,18 @@ nav a:hover {
 		float: right;
 	}
 
+	#portrait {
+		margin-top: 0px;
+	}
+
+	a.scroll {
+		width: 100%;
+	}
+
 	main {
 		padding: 0;
 	}
+
 	.portfolio-eintrag {
 		margin: 0 auto;
 		text-align: center;
